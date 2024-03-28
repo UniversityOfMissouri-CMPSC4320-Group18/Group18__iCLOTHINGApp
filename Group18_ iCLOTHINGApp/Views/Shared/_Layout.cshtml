@@ -20,14 +20,41 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <div class="dropdown">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Men</a>
+                                <div class="dropdown-content">
+
+                                    <div class="dropdown-content-item-title">
+                                        <span>Shirts</span>
+                                        <span>Activeware</span>
+                                        <span>Jeans</span>
+                                        <span>Swimware</span>
+                                    </div>
+                                    <br />
+                                    <div class="dropdown-content-item-image">
+                                        <span>image</span>
+                                        <span>image</span>
+                                        <span>image</span>
+                                        <span>image</span>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="CustomerLogin" asp-action="CustomerLoginForm">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="CustomerLogin" asp-action="CustomerLoginForm">About Us</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div
         </nav>
     </header>
     <div class="container">

@@ -10,8 +10,7 @@ namespace Group18__iCLOTHINGApp.Controllers
 {
     public class ProductListWindowController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult ProductListWindow()
         {
             return View();
         }

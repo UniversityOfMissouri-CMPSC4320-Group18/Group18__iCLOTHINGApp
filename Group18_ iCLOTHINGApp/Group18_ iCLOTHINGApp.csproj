@@ -8,4 +8,14 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\CustomerLogin\" />
+    <None Remove="Views\CustomerRegistration\" />
+    <None Remove="Views\ProductListWindow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\CustomerLogin\" />
+    <Folder Include="Views\CustomerRegistration\" />
+    <Folder Include="Views\ProductListWindow\" />
+  </ItemGroup>
 </Project>
