@@ -12,10 +12,12 @@
     <None Remove="Views\CustomerLogin\" />
     <None Remove="Views\CustomerRegistration\" />
     <None Remove="Views\ProductListWindow\" />
+    <None Remove="Views\AboutUsInformation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\CustomerLogin\" />
     <Folder Include="Views\CustomerRegistration\" />
     <Folder Include="Views\ProductListWindow\" />
+    <Folder Include="Views\AboutUsInformation\" />
   </ItemGroup>
 </Project>

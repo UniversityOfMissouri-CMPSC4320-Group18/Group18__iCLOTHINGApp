@@ -1,0 +1,59 @@
+﻿@{ViewData["Title"] = "About Us";
+}
+@using Group18__iCLOTHINGApp.Models
+@model Group18__iCLOTHINGApp.Models.AboutUs
+
+<style>
+    .companyAddressContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+    .description {
+        width: 400px;
+        height: 400px;
+    }
+    .section {
+        position: absolute;
+        color: grey;
+        font-size: 150px;
+        letter-spacing: 100px;
+        z-index: -1;
+        opacity: .5;
+        margin-left: 30px;
+        text-align: center;
+    }
+</style>
+
+<div style="width: 100%">
+    <h1>About Us</h1>
+    <h3 class="section">ADDRESS</h3>
+    <div class="companyAddressContainer">
+        <span class="description" style="white-space: pre-line">@Model.companyAddress</span>
+        <img class="image" src="~/images/company-address-image.png" alt="company-address-image" />
+    </div>
+    <h3 class="section">SHIPPING</h3>
+    <div class="companyAddressContainer">
+        <span class="description" style="white-space: pre-line">@Model.companyShippingPolicy</span>
+        <img class="image" src="~/images/shipping-policy-image.png" alt="shipping-policy-image" />
+    </div>
+    <h3 class="section">RETURN</h3>
+    <div class="companyAddressContainer">
+        <span class="description" style="white-space: pre-line">@Model.companyReturnPolicy</span>
+        <img class="image" src="~/images/return-policy-image.png" alt="return-policy-image" />
+    </div>
+    <h3 class="section">CONTACT</h3>
+    <div class="companyAddressContainer">
+        <span class="description" style="white-space: pre-line">@Model.companyContactInfo</span>
+        <img class="image" src="~/images/contact-information.png" alt="contact-information" />
+    </div>
+    <h3>Description</h3>
+    <h6>@Model.companyBusinessDescription</h6>
+</div>
