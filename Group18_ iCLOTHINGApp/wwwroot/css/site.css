@@ -26,22 +26,75 @@ body {
     position: absolute;
     z-index: 100;
     width: 100vw;
-    left: -260px;
-    background-color: white;
+    left:0;
+    top: 0;
+    margin: 0;
+    height: 40vh;
+    background-color: lightgray;
 }
 
 .dropdown-content-item-title {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-evenly;
 }
 
-.dropdown-content-item-image {
+.dropdown-content-image-container {
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-evenly;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.homepageImageSelection {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    gap: 0;
+}
+
+img {
+    width: 33.33333vw;
+    height: 80vh;
+    object-fit:cover;
+}
+
+.menFloatingText {
+    position: absolute;
+    left: 15vw;
+    color: black;
+    background-color: rgba(255,255,255,0.5);
+}
+.womenFloatingText {
+    position: absolute;
+    left: 45vw;
+    color: black;
+    background-color: rgba(255,255,255,0.5);
+}
+.kidsFloatingText {
+    position: absolute;
+    left: 83vw;
+    color: black;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.productListContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.pants {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.categoryImage {
+    width: 20vw;
+    height: 30vh;
+    object-fit: cover;
 }

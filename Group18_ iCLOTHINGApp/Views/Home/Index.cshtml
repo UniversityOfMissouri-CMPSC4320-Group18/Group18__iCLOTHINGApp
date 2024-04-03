@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home";
 }
 
-<a class="btn btn-primary" role="button" asp-controller="CustomerLogin" asp-action="CustomerLoginForm">
+<!--<a class="btn btn-primary" role="button" asp-controller="CustomerLogin" asp-action="CustomerLoginForm">
     login
 </a>
 <a class="btn btn-primary" role="button" asp-controller="CustomerRegistration" asp-action="CustomerRegisterForm">
@@ -11,3 +11,18 @@
 <a class="btn btn-primary" role="button" asp-controller="ProductListWindow" asp-action="ProductListWindow">
     productlistwindow
 </a>
+-->
+<div class="homepageImageSelection">
+    <a role="button" asp-controller="ProductListWindow" asp-action="ProductListWindow">
+        <img src="~/images/home-man.png" alt="shirt-man" />
+    </a>
+    <h2 class="menFloatingText">Men</h2>
+    <a role="button" asp-controller="ProductListWindow" asp-action="ProductListWindow">
+        <img src="~/images/home-woman.png" alt="shirt-woman" />
+    </a>
+    <h2 class="womenFloatingText">Women</h2>
+    <a role="button" asp-controller="ProductListWindow" asp-action="ProductListWindow">
+        <img src="~/images/home-kid.png" alt="shirt-kid" />
+    </a>
+    <h2 class="kidsFloatingText">Kids</h2>
+</div>
