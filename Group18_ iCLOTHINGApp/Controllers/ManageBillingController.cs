@@ -3,17 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Group18__iCLOTHINGApp.Models;
 
 namespace Group18__iCLOTHINGApp.Controllers
 {
     public class ManageBillingController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        public ActionResult EmailForm()
         {
             return View();
+        }
+        public ActionResult SubmitEmailForm()
+        {
+
+            String subject = Request.Form["subject"];
+            String body = Request.Form["body"];
+            Email email = new Email
+            {
+                emailSubject = subject,
+                emailBody = body,
+                emailDate = new DateOnly(),
+                emailNo = "1"
+            };
+            Console.WriteLine(email.toString());
+            return View("EmailForm");
         }
     }
 }

@@ -13,11 +13,13 @@
     <None Remove="Views\CustomerRegistration\" />
     <None Remove="Views\ProductListWindow\" />
     <None Remove="Views\AboutUsInformation\" />
+    <None Remove="Views\ManageBilling\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\CustomerLogin\" />
     <Folder Include="Views\CustomerRegistration\" />
     <Folder Include="Views\ProductListWindow\" />
     <Folder Include="Views\AboutUsInformation\" />
+    <Folder Include="Views\ManageBilling\" />
   </ItemGroup>
 </Project>

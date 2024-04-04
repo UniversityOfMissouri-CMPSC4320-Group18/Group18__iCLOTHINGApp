@@ -3,12 +3,17 @@ namespace Group18__iCLOTHINGApp.Models
 {
 	public class Email
 	{
-		public String emailNo;
-		public DateOnly emailDate;
-		public String emailSubject;
-		public String emailBody;
+		public String emailNo { get; set; }
+        public DateOnly emailDate { get; set; }
+        public String emailSubject { get; set; }
+        public String emailBody { get; set; }
 
-		public Email()
+		public String toString()
+		{
+			return "emailNo: " + emailNo + ", emailDate: " + emailDate + ", emailSubject: " + emailSubject + ", emailBody: " + emailBody;
+		}
+
+        public Email()
 		{
 		}
 	}
