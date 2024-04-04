@@ -6,6 +6,7 @@ namespace Group18__iCLOTHINGApp.Models
 		public String stickerID;
 		public DateOnly stickerDate;
 
+
 		public ItemDelivery()
 		{
 		}
